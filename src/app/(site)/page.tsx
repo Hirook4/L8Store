@@ -1,10 +1,11 @@
 import { Banners } from "@/components/home/banners";
+import { ProductListSkeleton } from "@/components/home/product-list-skeleton";
 import { data } from "@/data";
 import Image from "next/image";
 
 export default function Page() {
   return (
-    <div>
+    <div className="pb-96">
       <Banners list={data.banners} />
       <div className="flex flex-col md:flex-row gap-4 md:gap-8 mt-6 md:mt-12">
 
@@ -52,6 +53,9 @@ export default function Page() {
 
         </div>
       </div>
+      {/* Skeleton */}
+      <ProductListSkeleton />
+      <ProductListSkeleton />
     </div>
   );
 }
