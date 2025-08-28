@@ -66,8 +66,6 @@ export const Banners = ({ list }: Props) => {
                         style={{ opacity: currentImage == index ? 1 : 0.5 }}
                         onClick={() => handleBannerClick(index)}
                     >
-
-
                     </div>
                 ))}
             </div>
